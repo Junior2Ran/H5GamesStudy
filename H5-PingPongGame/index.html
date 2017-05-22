@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #playground{background-color: #e0ffe0;width: 400px;height: 200px;position: relative;overflow: hidden;}
+    #ball{background-color: #fbb;position: absolute;width: 20px;height: 20px;left: 150px;top: 100px;border-radius: 10px;}
+    .paddle{background-color: #bbf;position: absolute;left: 50px;top: 70px;width: 30px;height: 70px}
+    #paddleB{left: 320px;}
+  </style>
+</head>
+
+<body>
+  <div id="game">
+    <h1>乒乓球游戏之对与不对</h1>
+    <div id="playground">
+      <div id="paddleA" class="paddle"></div>
+      <div id="paddleB" class="paddle"></div>
+      <div id="ball"></div>
+    </div>
+    <div id="scoreboard">
+      <div class="score">playerA:  <span id="scoreA">0</span></div>
+      <div class="score">playerB:  <span id="scoreB">0</span></div>
+    </div>
+    <br>
+    <div id="rule">玩家A使用W和S控制，玩家B使用上下箭头控制。先获3分者获胜。</div>
+    <br>
+    <button id="start">开始游戏</button>
+  </div>
+
+  <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="pingpong.js"></script>
+</body>
+</html>
