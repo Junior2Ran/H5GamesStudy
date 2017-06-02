@@ -71,6 +71,8 @@ function checkLevelCompleteness() {
   if ($("#progress").html() == "100") {
     if (untangleGame.currentLevel+1 < untangleGame.levels.length) {
       untangleGame.currentLevel++;
+    } else {
+      alert("Game over!!!")
     }
     setupCurrentLevel();
   }
